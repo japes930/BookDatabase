@@ -1,8 +1,14 @@
-public class BookDatabase {
+//package BookDatabase;
+
+public class BookDb {
     private String sku, title, author, description;
     private double price;
 
-    public Book(String sku, String title, String author, String description, double price){
+//    public BookDb (){
+////        Constructor
+//    }
+
+    public BookDb(String sku, String title, String author, String description, double price){
         this.sku = sku;
         this.title = title;
         this.author = author;
@@ -42,23 +48,19 @@ public class BookDatabase {
         return this.price;
     }
     public void setPrice(){
-        this.price = price
+        this.price = price;
     }
 
+//
+//    public void lookupBook(){
+//        System.out.println("Title: " + getTitle()+ '\n' +
+//               "Author: " + getAuthor() + '\n' +
+//                getDescription() + "\n"+"Price: " + getPrice());
+//    }
 
-    public void lookupBook(input){
-        switch (input){
-            case Java1001:
-                System.out.println("Title: " + getTitle(book1));
-                System.out.println("Author: " + getAuthor(book1));
-                System.out.println(getDescription(book1));
-                System.out.println("Price: " + getPrice());
-                break;
-            case Java1002:
-                System.out.println("Title: " + getTitle(book2));
-                
-
-
-        }
+    public String lookupBook(){
+        return "Title: " + getTitle()+ '\n' +
+               "Author: " + getAuthor() + '\n' +
+                getDescription() + '\n' + "Price: " + getPrice();
     }
 }
