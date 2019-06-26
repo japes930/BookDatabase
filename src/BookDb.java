@@ -16,6 +16,11 @@ public class BookDb {
         this.price = price;
     }
 
+    public BookBySku(String sku){
+
+
+    }
+
     public String getSku(){
         return this.sku;
     }
