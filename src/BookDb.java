@@ -16,10 +16,12 @@ public class BookDb {
         this.price = price;
     }
 
-    public BookBySku(String sku){
+//    public String getBySku(String sku){
+//        if (this.sku == sku)
+//            return title;
+//
+//    }
 
-
-    }
 
     public String getSku(){
         return this.sku;
@@ -57,15 +59,19 @@ public class BookDb {
     }
 
 //
-//    public void lookupBook(){
+//    public void getDisplayText(){
 //        System.out.println("Title: " + getTitle()+ '\n' +
 //               "Author: " + getAuthor() + '\n' +
 //                getDescription() + "\n"+"Price: " + getPrice());
 //    }
 
-    public String lookupBook(){
+    public String getDisplayText(){
         return "Title: " + getTitle()+ '\n' +
                "Author: " + getAuthor() + '\n' +
                 getDescription() + '\n' + "Price: " + getPrice();
     }
+
+
+
+
 }
